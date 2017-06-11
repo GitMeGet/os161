@@ -55,7 +55,8 @@ array_destroy(struct array *a)
 
 void
 array_init(struct array *a)
-{
+{	
+	// double assignment 
 	a->num = a->max = 0;
 	a->v = NULL;
 }
