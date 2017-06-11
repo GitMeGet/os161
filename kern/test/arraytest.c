@@ -51,6 +51,7 @@ testa(struct array *a)
 	KASSERT(n==0);
 
 	for (i=0; i<TESTSIZE; i++) {
+		// &testarray[i] : addr of element i
 		r = array_add(a, &testarray[i], NULL);
 		KASSERT(r==0);
 		n = array_num(a);
