@@ -457,7 +457,7 @@ thread_start_cpus(void)
 
 /*
  * Make a thread runnable.
- *
+
  * targetcpu might be curcpu; it might not be, too.
  */
 static

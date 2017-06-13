@@ -86,6 +86,7 @@ array_preallocate(struct array *a, unsigned num)
 		/* Don't touch A until the allocation succeeds. */
 		newmax = a->max;
 		while (num > newmax) {
+			// if newmax != 0
 			newmax = newmax ? newmax*2 : 4;
 		}
 
